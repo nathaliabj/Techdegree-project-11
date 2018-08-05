@@ -1,0 +1,127 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #f8f8f8;
+}
+h2 {
+  color: #7cddca;
+  font-size: 2em;
+  margin: 52px 0 40px;
+  text-transform: capitalize;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.search {
+  max-width: 460px;
+  display: flex;
+  margin: 0 auto 32px;
+  position: relative;
+}
+
+.search .search-icon {
+  height: 17px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.search img {
+  border-left: 1px solid #d7dbdf;
+  padding-left: 10px;
+}
+
+input {
+  font-size: 1em;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d7dbdf;
+  box-shadow: -1px 7px 32px 2px rgba(201,201,201,.3);
+  border-radius: 5px;
+}
+
+.main-nav li {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.main-nav a {
+  display: block;
+  background: #fff;
+  box-shadow: -1px 7px 32px 2px rgba(201,201,201,.3);
+  border-radius: 5px;
+  padding: 12px;
+  color: #707070;
+}
+.main-nav .active,
+.main-nav a:hover,
+.search-form button:hover {
+  background-color: rgba(124, 221, 202, .3);
+}
+
+.img-container{
+  background: #fff;
+  box-shadow: -1px 7px 32px 2px rgba(201,201,201,.3);
+}
+.img-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  padding: 20px ;
+}
+.img-container ul li {
+  width: 220px;
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.img-container ul img {
+  width: 100%;
+  filter: grayscale(20%);
+   -webkit-filter: grayscale(1);
+  transition: all .3s;
+}
+.img-container li:hover img {
+   -webkit-filter: grayscale(1);
+  filter: grayscale(0%);
+}
+.img-container .not-found {
+  width: 100%;
+}
+
+.not-found {
+  color: #707070;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px)  {
+  body {
+    padding-top: 2em;
+  }
+  .img-container li {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px)  {
+  body {
+    padding-top: 4em;
+  }
+  .container {
+    max-width: 85%;
+    margin: auto;
+  }
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .main-nav li {
+    margin: 10px;
+    width: 100px;
+  }
+}
